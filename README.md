@@ -4,6 +4,12 @@
 
 This project focuses on processing and analyzing financial transaction data for insights generation. The primary goals were to develop an intelligent AI agent capable of integrating multiple data sources, cleaning and transforming the data, and applying machine learning models for fraud detection and expense forecasting. The final solution combines these models into a report-generating AI agent to aid financial institutions in decision-making and customer insights.
 
+Below is an example showcasing the final functionality of the AI agent, which generated a PDF report from the prompt "Create a pdf report for the year 2016" for client 1556. The agent extracted the dates (01.01.2016 and 31.12.2016) from the prompt and provided earnings, expenses, and cash flow summaries with plots for the specified date range:
+
+<div align="center">
+  <img src="readme_img/report.mp4" width="300" alt="Screencast of AI Agent Generated Report" />
+</div>
+
 ### 🔑 Key Objectives
 
 1. **Data Collection and API Integration**: Retrieve client and card data via API, and transaction data from a CSV file.
@@ -115,20 +121,36 @@ This combination of models and an AI-driven reporting agent allows for dynamic, 
 
 ---
 
-## 🧪 Testing and Evaluation
+## 🚀 Getting Started
 
-- **Unit Tests**: Tests are available in the `tests/` folder. Key tests include:
-  - `agent_test.py`: Tests for the AI agent's functionality.
-  - `statistics_test.py`: Tests for data processing and query functions.
+- **Clone the Repository**:  
+  Clone the repository and navigate to the project directory.
+    ```bash
+    git clone https://github.com/ezemriv/AI-Agent-Report-Maker-Full.git
+    cd AI-Agent-Report-Maker-Full
+    ```
+- **Install Dependencies**:  
+  Ensure you are using Python 3.10.12, then install the required packages.
+    ```bash
+    pip install -r requirements.txt
+    ```
+- **Run Notebooks**:  
+  Explore the notebooks in the `notebooks/` directory to review model training and evaluation details.
 
-- **Evaluation Metrics**:
-  - **Fraud Detection**: Balanced Accuracy Score.
-  - **Expense Forecasting**: R2 Score for prediction accuracy.
+- **Run Unit Tests**:  
+  Validate functionality with unit tests.
+    ```bash
+    python -m pytest tests/
+    ```
 
-Run the tests using the following command:
-```bash
-python -m pytest tests/test_module.py
-```
+- **Run Functional Test for the AI Agent**:  
+  A custom functional test for the AI agent is available in `agent_functional_test.py` in the root folder. This script provides a prompt to the agent and generates a PDF report in the `reports` folder.
+    ```bash
+    python agent_functional_test.py
+    ```
 
 ---
 
+## 🙌 Acknowledgments
+
+Special thanks to the hackathon organizers and collaborators who provided the datasets and APIs that made this project possible. Their support and resources were instrumental in developing and refining this solution.
