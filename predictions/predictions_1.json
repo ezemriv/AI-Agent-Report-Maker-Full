@@ -1,0 +1,18 @@
+{
+    "target": {
+        "query_1": {
+            "card_id": 4137
+        },
+        "query_2": {
+            "client_id": 1987
+        },
+        "query_3": {
+            "transaction_id": 10534178
+        },
+        "query_4": {
+            "client_id": 598,
+            "card_id": 2040,
+            "number_transactions": 172
+        }
+    }
+}
