@@ -4,10 +4,9 @@
 
 This project focuses on processing and analyzing financial transaction data for insights generation. The primary goals were to develop an intelligent AI agent capable of integrating multiple data sources, cleaning and transforming the data, and applying machine learning models for fraud detection and expense forecasting. The final solution combines these models into a report-generating AI agent to aid financial institutions in decision-making and customer insights.
 
-Below is an example showcasing the final functionality of the AI agent, which generated a PDF report from the prompt "Create a pdf report for the year 2016" for client 1556. The agent extracted the dates (01.01.2016 and 31.12.2016) from the prompt and provided earnings, expenses, and cash flow summaries with plots for the specified date range:
-
 <div align="center">
-  <img src="readme_img/report.mp4" width="300" alt="Screencast of AI Agent Generated Report" />
+  <img src="readme_img/output.gif" width="300" alt="Screencast of AI Agent Generated Report" />
+  <p><em>Example of final AI agent functionality: PDF report generated from the prompt "Create a pdf report for the year 2016" for client 1556.</em></p>
 </div>
 
 ### 🔑 Key Objectives
